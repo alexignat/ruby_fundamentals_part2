@@ -2,12 +2,30 @@
 
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
-grocery_list.each { |x| puts "*" + x}
+def puts_list(list)
+  list.map { |x| puts "*" + x}
+end
+
+puts_list(grocery_list)
 
 grocery_list << "rice"
 
-puts grocery_list
+puts "Added rice to grocery list"
+
+puts_list(grocery_list)
 
 
 
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
