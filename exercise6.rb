@@ -50,6 +50,21 @@ end
 
 sort(grocery_list)
 
+# Remove salmon from the array
+
+puts "I can't find any #{grocery_list.delete("salmon")}."
+
+#Display the new list
+
+puts "The new list is:"
+
+puts_list(grocery_list)
+
+
+
+
+
+
 
 
 
