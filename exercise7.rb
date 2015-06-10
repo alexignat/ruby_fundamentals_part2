@@ -16,6 +16,14 @@ end
 
 show(students)
 
+# Add a fourth cohort with 43 students
+
+puts "------------"
+
+students[:cohort4] = "43"
+
+show(students)
+
 
 
 
