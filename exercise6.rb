@@ -24,7 +24,7 @@ puts_list(grocery_list)
 
 puts "There are now #{grocery_list.count} items in the list."
 
-# Created a method to check to see if bananas are including in the grocery list
+# Createa method to check to see if bananas are including in the grocery list
 
 def check_b(list)
   if list.include?("bananas") == true
@@ -40,7 +40,15 @@ check_b(grocery_list)
 
 puts "The second item in the grocery list is #{grocery_list[1]}."
 
+# Creat a method to order the grocery list in alphabetic order, puts
 
+puts "I need to organize my grocery list items alphabeticly:"
+
+def sort(list)
+  puts list.sort.map { |x| "*" + x}
+end
+
+sort(grocery_list)
 
 
 
