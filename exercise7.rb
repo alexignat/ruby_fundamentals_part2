@@ -30,5 +30,12 @@ puts "------------"
 
 puts students.keys
 
+puts "------------"
 
+def expand(item)
+  puts "The cohorts are being expanded.\nThe new cohort sizes are:"
+  puts item.each { |key, value| item[key] = value + (value * 0.05)}
+end
+
+expand(students)
 
