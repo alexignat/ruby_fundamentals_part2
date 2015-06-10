@@ -68,6 +68,14 @@ students.delete(:cohort2)
 
 show(students)
 
+# Calculate the total amounts of students in all cohorts
+
+number_of_students = students.values
+
+# number_of_students is an array
+# find a way to add all the items in an array together
+
+number_of_students.each { |x|
 
 
 
