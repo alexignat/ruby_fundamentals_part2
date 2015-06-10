@@ -32,10 +32,38 @@ puts students.keys
 
 puts "------------"
 
-def expand(item)
-  puts "The cohorts are being expanded.\nThe new cohort sizes are:"
-  puts item.each { |key, value| item[key] = value + (value * 0.05)}
+# Create a method that multiplies the hashes keys by 5%
+
+# This method will return a new hash with increased class sizes and the original hash will remain untouched
+
+def increase_class_sizes(item)
+  item_modified = {}
+  item.each do |key, value|
+    item_modified[key] = value + (value * 0.05)
+  end
+  return item_modified
 end
 
-expand(students)
+
+# This method will modify the original hash
+
+# def expand(item)
+#   puts "The cohorts are being expanded.\nThe new cohort sizes are:"
+#   item.each do |key, value|
+#     item[key] = value + (value * 0.05)
+#   end
+# end
+
+puts "The cohorts are being expanded.\nThe new cohort sizes are:"
+
+
+new_class_size = increase_class_sizes(students)
+
+show(new_class_size)
+
+
+
+
+
+
 
