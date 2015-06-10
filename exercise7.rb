@@ -20,7 +20,7 @@ puts "------------\nLets add a fourth cohort:"
 
 # Add a fourth cohort with 43 students
 
-students[:cohort4] = "43"
+students[:cohort4] = 43
 
 show(students)
 
