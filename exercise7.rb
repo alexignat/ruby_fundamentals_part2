@@ -16,7 +16,7 @@ end
 
 show(students)
 
-puts "------------"
+puts "------------\nLets add a fourth cohort:"
 
 # Add a fourth cohort with 43 students
 
@@ -48,7 +48,6 @@ end
 # This method will modify the original hash
 
 # def expand(item)
-#   puts "The cohorts are being expanded.\nThe new cohort sizes are:"
 #   item.each do |key, value|
 #     item[key] = value + (value * 0.05)
 #   end
@@ -61,7 +60,13 @@ new_class_size = increase_class_sizes(students)
 
 show(new_class_size)
 
+# Deleting cohort 2
 
+puts "------------\nWe don't like cohort 2. Lets get rid of them:"
+
+students.delete(:cohort2)
+
+show(students)
 
 
 
