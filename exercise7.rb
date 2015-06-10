@@ -16,14 +16,19 @@ end
 
 show(students)
 
-# Add a fourth cohort with 43 students
-
 puts "------------"
+
+# Add a fourth cohort with 43 students
 
 students[:cohort4] = "43"
 
 show(students)
 
+puts "------------"
+
+# Puts cohorts (the keys of the hash)
+
+puts students.keys
 
 
 
