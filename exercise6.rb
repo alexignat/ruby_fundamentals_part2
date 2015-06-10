@@ -36,6 +36,10 @@ end
 
 check_b(grocery_list)
 
+# Puts the second item in the gorcery list
+
+puts "The second item in the grocery list is #{grocery_list[1]}."
+
 
 
 
