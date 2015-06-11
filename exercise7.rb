@@ -38,9 +38,11 @@ puts "------------"
 
 def increase_class_sizes(item)
   item_modified = {}
+
   item.each do |key, value|
     item_modified[key] = value + (value * 0.05)
   end
+
   return item_modified
 end
 
@@ -74,9 +76,9 @@ puts "------------"
 # Calculate the total amounts of students in all cohorts
 # Using .inject
 
-
 def add_students(item)
   number_of_students = item.values
+
   puts number_of_students.inject { |sum, x| sum + x }
 end
 
@@ -84,8 +86,18 @@ add_students(students)
 
 # Bonus
 # Calculate the total amounts of students in all cohorts
-# Using .each and incrementing a variable
+# Using .reduce
 
+puts "------------"
+
+def add_students_2(item)
+  number_of_students = item.values
+
+  puts number_of_students.reduce(:+)
+end
+
+
+add_students_2(students)
 
 
 
