@@ -72,10 +72,13 @@ show(students)
 
 number_of_students = students.values
 
-# number_of_students is an array
-# find a way to add all the items in an array together
+puts "------------"
 
-number_of_students.each { |x|
+puts "There are #{number_of_students.inject { |sum, x| sum + x}} students."
+
+
+
+# number_of_students.each { |x|
 
 
 
