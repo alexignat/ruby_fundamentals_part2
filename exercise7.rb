@@ -68,17 +68,27 @@ students.delete(:cohort2)
 
 show(students)
 
-# Calculate the total amounts of students in all cohorts
-
-number_of_students = students.values
-
 puts "------------"
 
-puts "There are #{number_of_students.inject { |sum, x| sum + x}} students."
+# Bonus
+# Calculate the total amounts of students in all cohorts
+# Using .inject
+
+
+def add_students(item)
+  number_of_students = item.values
+  puts number_of_students.inject { |sum, x| sum + x }
+end
+
+add_students(students)
+
+# Bonus
+# Calculate the total amounts of students in all cohorts
+# Using .each and incrementing a variable
 
 
 
-# number_of_students.each { |x|
+
 
 
 
